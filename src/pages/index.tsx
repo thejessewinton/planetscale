@@ -47,7 +47,7 @@ const MockIcon = () => {
 };
 
 const Items = () => {
-  const mock = Array.from({ length: 9 }, (_, i) => i);
+  const mock = Array.from({ length: 30 }, (_, i) => i);
 
   const items = mock.reduce((acc, _, i) => {
     if (i % 3 === 0) {
@@ -65,11 +65,11 @@ const Items = () => {
           y: 0,
           transition: {
             repeat: Infinity,
-            duration: 10,
+            duration: 90,
             ease: "linear",
           },
         }}
-        initial={{ x: -221, y: -68 }}
+        initial={{ x: -2000, y: -500 }}
         style={{ rotateX: "20deg", rotateZ: "-20deg", skewX: "20deg" }}
         onAnimationComplete={() => items.push(...items)}
       >
