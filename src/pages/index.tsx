@@ -93,6 +93,8 @@ const Items = () => {
   );
 };
 
+const description = `WIP attempt to recreate the PlanetScale homepage brands slider.`;
+
 const Brands: NextPage = () => {
   return (
     <>
@@ -102,7 +104,9 @@ const Brands: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen bg-white">
-        <div className="mt-8 md:mt-16" />
+        <div className="absolute bottom-40 z-[100] mt-8 px-9 md:mt-16">
+          {description}
+        </div>
         <Items />
       </main>
     </>
